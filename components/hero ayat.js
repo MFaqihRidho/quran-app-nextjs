@@ -18,11 +18,6 @@ function HeroAyat(props) {
                         : "بِسْمِ للَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"}
                 </p>
             </div>
-            <img
-                className="absolute z-0 opacity-5 w-80 -right-7 -bottom-36"
-                src="/flat-quran.png"
-                alt=""
-            />
         </div>
     );
 }

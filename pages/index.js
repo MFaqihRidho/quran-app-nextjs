@@ -44,7 +44,7 @@ export default function Home({ data }) {
             PageDesc="Home Page the list of the surah"
         >
             <div className="mb-5">
-                <p className="text-lg text-gray-500">Assalamu'alaikum</p>
+                <p className="text-lg text-gray-500">Assalamualaikum</p>
                 <p className="text-2xl font-semibold">Hamba Allah</p>
             </div>
             <div className="flex items-center justify-center mb-10">
@@ -70,11 +70,6 @@ export default function Home({ data }) {
                             </p>
                         </div>
                     </div>
-                    <img
-                        className="absolute w-64 -right-7 -bottom-24"
-                        src="/flat-quran.png"
-                        alt=""
-                    />
                 </div>
             </div>
             <div className="flex flex-col gap-5 pb-20">
@@ -82,6 +77,7 @@ export default function Home({ data }) {
                     return (
                         <div
                             onClick={(e) => handleClickSurah(e)}
+                            key={data.number}
                             id={data.number}
                             className="flex flex-col gap-5 cursor-pointer"
                         >

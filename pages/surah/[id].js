@@ -1,13 +1,8 @@
 import Layout from "../../components/layout";
 import HeroAyat from "../../components/hero ayat";
 import Ayat from "../../components/ayat";
-import { useEffect } from "react";
 
 function Surah({ data, translate }) {
-    useEffect(() => {
-        console.log(data);
-        console.log(translate);
-    }, []);
     return (
         <Layout
             title={`${data?.data?.englishName}`}
@@ -18,7 +13,7 @@ function Surah({ data, translate }) {
                 englishNameTranslation={data?.data?.englishNameTranslation}
                 revelationType={data?.data?.revelationType}
                 numberOfAyahs={data?.data?.numberOfAyahs}
-                id={data?.data?.number}
+                key={data?.data?.number}
             ></HeroAyat>
             {data?.data?.ayahs.map((data, index) => {
                 return (
@@ -26,6 +21,7 @@ function Surah({ data, translate }) {
                         numberInSurah={data?.numberInSurah}
                         text={data?.text}
                         translate={translate?.data?.ayahs[index]?.text}
+                        key={data?.number}
                     ></Ayat>
                 );
             })}

@@ -2,10 +2,10 @@ import Layout from "../components/layout";
 
 function About() {
     return (
-        <Layout title="About">
+        <Layout title="About" PageTitle="About">
             <div className="flex flex-col w-full gap-2 mb-5 text-xl font-medium">
                 <p>
-                    Assalamu'alaikum <b>Hamba Allah</b> I really appreciate you
+                    Assalamualaikum <b>Hamba Allah</b> I really appreciate you
                     for visiting this website
                 </p>
                 <p>
@@ -13,15 +13,18 @@ function About() {
                     <b>front end developer</b> , I hope this website useful for
                     muslim{" "}
                 </p>
-                <p>This website just for learning next js</p>
-            </div>
-            <div className="mb-5 text-xl font-medium">
-                <p>Next Future Feature:</p>
-                <ul className="px-5 list-disc">
-                    <li className="dot">Change Translation</li>
-                    <li className="dot">Change Name</li>
-                    <li className="dot">AutoPlay Audio</li>
-                </ul>
+                <p>
+                    This website just for learning next js,Full Feature Webiste
+                    is{" "}
+                    <a
+                        href="https://quran-web-app.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-bold underline"
+                    >
+                        there
+                    </a>
+                </p>
             </div>
             <div>
                 <p className="text-xl font-medium">
