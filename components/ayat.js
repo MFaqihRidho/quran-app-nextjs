@@ -8,9 +8,9 @@ function Ayat(props) {
             </div>
             <div className="flex flex-col gap-4 mb-5">
                 <p className="self-end w-full text-4xl text-right">
-                    {props.numberInSurah === 0 && props.id !== 1
+                    {props.numberInSurah === 1 && props.surah !== 1
                         ? props?.text.replace(
-                              "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+                              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
                               ""
                           )
                         : props?.text}

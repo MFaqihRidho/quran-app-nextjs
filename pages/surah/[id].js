@@ -22,6 +22,7 @@ function Surah({ data, translate }) {
                         text={data?.text}
                         translate={translate?.data?.ayahs[index]?.text}
                         key={data?.number}
+                        surah={data?.number}
                     ></Ayat>
                 );
             })}
